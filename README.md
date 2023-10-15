@@ -38,7 +38,7 @@
 - The words - predefined tokens are specified between " and ".
 
 ### 2.2 Syntactical Rules
-- `program ::= "VARS" decllist ";" cmpdstmt "."`
+- `program ::= "VARS" decllist ";" cmpdstmt`
 - `decllist ::= declaration | {declaration}`
 - `declaration ::= type " " list_identifiers ";"`
 - `list_identifiers ::= identifier { ',' identifier }`
