@@ -1,0 +1,17 @@
+VARS
+integer x;
+START
+read(x);
+while( x != 0 ){
+	integer divs = 0;
+	for(integer i = 2; i*i <= x; i++;)
+	{
+		divs += 1;
+	}
+	if(divs == 0)
+	{
+		write(x);
+	}
+	read x; 
+}
+STOP;
