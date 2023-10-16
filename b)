@@ -14,4 +14,4 @@ while( x != 0 ){
 	}
 	read x; 
 }
-STOP;
+STOP
