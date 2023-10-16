@@ -4,7 +4,7 @@
 
 ### 1.1 Alphabet
 - Upper (A-Z) and lower-case letters (a-z) of the English alphabet
-- Underline character '_'
+- Characters '_' | ’,’ | ’?’ | ’!’ | ’:’ | ‘.’
 - Decimal digits (0-9)
 
 ### 1.2 Lexicon
@@ -20,14 +20,13 @@
   - identifier ::= letter {letter | digit}
   - letter ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
   - digit ::= "0" | "1" | ... | "9"
-  - nonzero_digit ::= "1" | ... | "9"
-
 #### c. Constants
 1. Integer:
    - intconst := +digits | -digits | digits
    - digits := digit | nonzero_digit {digit}
+   - nonzero_digit ::= "1" | ... | "9"
 2. Character:
-   - character := letter | digit | ',' | '?' | '!' | ':' | '.' | '(' | ')' | '{' | '}' | '[' | ']' | '%'
+   - character := letter | digit | ’,’ | ’?’ | ’!’ | ’:’ | ‘.’ | ‘_’
 3. String:
    - constcharacter := "string"
    - string := character {character}
