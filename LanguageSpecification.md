@@ -22,8 +22,8 @@
   - digit ::= "0" | "1" | ... | "9"
 #### c. Constants
 1. Integer:
-   - intconst := +digits | -digits | digits
-   - digits := digit | nonzero_digit {digit}
+   - intconst := +digits | -digits | digits | 0
+   - digits := nonzero_digit | nonzero_digit {digit}
    - nonzero_digit ::= "1" | ... | "9"
 2. Character:
    - character := letter | digit | ’,’ | ’?’ | ’!’ | ’:’ | ‘.’ | ‘_’ | ' '
