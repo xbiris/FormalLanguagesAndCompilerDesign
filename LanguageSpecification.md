@@ -4,7 +4,7 @@
 
 ### 1.1 Alphabet
 - Upper (A-Z) and lower-case letters (a-z) of the English alphabet
-- Characters '_' | ’,’ | ’?’ | ’!’ | ’:’ | ‘.’
+- Characters '_' | ’,’ | ’?’ | ’!’ | ’:’ | ‘.’ | ' '
 - Decimal digits (0-9)
 
 ### 1.2 Lexicon
@@ -26,7 +26,7 @@
    - digits := digit | nonzero_digit {digit}
    - nonzero_digit ::= "1" | ... | "9"
 2. Character:
-   - character := letter | digit | ’,’ | ’?’ | ’!’ | ’:’ | ‘.’ | ‘_’
+   - character := letter | digit | ’,’ | ’?’ | ’!’ | ’:’ | ‘.’ | ‘_’ | ' '
 3. String:
    - constcharacter := "string"
    - string := character {character}
