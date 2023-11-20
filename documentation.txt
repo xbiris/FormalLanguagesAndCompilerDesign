@@ -1,0 +1,14 @@
+FA := states "\n" alphabet "\n" initialState "\n" finalStates "\n" transitions
+
+states := state{,state}
+state := [a-z]
+
+alphabet := character{,character}
+character := digit|state
+digit := [0-9]
+
+initialState := state
+finalStates := state{,state}
+
+transitions := transition{"\n" transition}
+transition  := state "," digit "=" state
