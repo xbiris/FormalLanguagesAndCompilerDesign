@@ -1,0 +1,18 @@
+VARS
+integer x;
+integer y;
+list[10] integer myList;
+START
+x = 5;
+y = 10;
+read(x);
+write(y);
+if (x < y) {
+  x = x + 1;
+} else {
+  y = y - 1;
+}
+while (x < y) {
+  y = y - 1;
+}
+STOP
