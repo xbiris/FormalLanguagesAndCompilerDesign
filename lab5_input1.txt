@@ -1,0 +1,22 @@
+VARS
+integer x;
+integer divs;
+integer i;
+START
+read(x);
+while( x != 0 )
+{
+        divs = 0;
+        i = 2;
+        while(i*i <= x)
+        {
+                divs = divs + 1;
+                i = i + 1;
+        }
+        if(divs == 0)
+        {
+                write(x);
+        }
+        read(x);
+}
+STOP
