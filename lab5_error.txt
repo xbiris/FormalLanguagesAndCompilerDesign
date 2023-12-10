@@ -1,0 +1,17 @@
+VARS
+integer x;
+integer y;
+START
+x = 05;
+y = 50;
+read(x);
+write(y);
+if (x < y) {
+  x = x + 1;
+} else {
+  y = y - 1;
+}
+while (x < y) {
+  y = y - 1;
+}
+STOP
